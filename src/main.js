@@ -21,7 +21,9 @@ Vue.use(ViewUI);
 
 const router = new VueRouter({
   routes,
-  mode: 'history'
+  // mode: 'history'
+  mode: "hash"
+
 })
 
 const store = new Vuex.Store(

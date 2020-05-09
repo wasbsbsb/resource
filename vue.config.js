@@ -7,7 +7,7 @@ const resolve = dir => {
 
 
 module.exports = {
-    publicPath: '/',
+    publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
     lintOnSave: false,
     productionSourceMap: false,
     chainWebpack: config => {
@@ -44,7 +44,7 @@ module.exports = {
         }
 
     },
-  
+
     pluginOptions: {
         'style-resources-loader': {
             preProcessor: 'less',

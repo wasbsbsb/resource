@@ -1,6 +1,10 @@
 
 const routes = [{
     name: '首页',
+    path: '/',
+    redirect: '/Home/chat',
+}, {
+    name: '首页',
     path: "/Home",
     component: () => import("@/pages/Home"),
     children: [
