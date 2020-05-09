@@ -3,8 +3,7 @@
 </template>
 <script>
 export default {
-  name: "titleHeader",
- 
+  name: "titleHeader"
 };
 </script>
 <style lang="less" scoped>
@@ -12,5 +11,6 @@ export default {
   text-align: center;
   height: 40px;
   line-height: 40px;
+  border-bottom: 1px solid #ccc;
 }
 </style>
